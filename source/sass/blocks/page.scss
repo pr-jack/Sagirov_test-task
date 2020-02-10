@@ -1,0 +1,19 @@
+.page-wrapper{
+  margin: 0 auto;
+  max-width: 1920px;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.page-header {
+  width: 100%;
+  height: 660px;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
