@@ -8,11 +8,20 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
   min-width: 320px;
   margin: 0;
   font-family: $font-primary;
   background-color: #f2f2f2;
+  color: #ffffff;
 }
 
 a {

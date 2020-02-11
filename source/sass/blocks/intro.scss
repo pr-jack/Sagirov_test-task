@@ -1,0 +1,16 @@
+.intro-title__main {
+  font-size: 58px;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  background: linear-gradient(270deg, rgba(255,63,4,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-title__description {
+  font-size: 25px;
+  font-family: $font-primary;
+  background: linear-gradient(270deg, rgba(255,63,4,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
