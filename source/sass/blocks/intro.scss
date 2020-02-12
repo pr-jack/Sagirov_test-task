@@ -1,5 +1,21 @@
+.intro-title {
+  position: relative;
+  margin-top: 110px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 406px;
+    height: 58px;
+    background-image: url("../img/line.png");
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+}
+
 .intro-title__main {
   font-size: 58px;
+  line-height: 58px;
   font-family: $font-secondary;
   text-transform: uppercase;
   background: linear-gradient(270deg, rgba(255,63,4,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
@@ -9,8 +25,47 @@
 
 .intro-title__description {
   font-size: 25px;
+  line-height: 25px;
   font-family: $font-primary;
   background: linear-gradient(270deg, rgba(255,63,4,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.intro-title__button {
+  position: relative;
+  display: inline-block;
+  margin-top: 87px;
+  padding: 10px 23px;
+  font-family: $font-small;
+  font-size: 14px;
+  line-height: 14px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(12deg, rgba(35,89,156,1) 0%, rgba(14,31,45,1) 40%, rgba(14,31,45,1) 60%, rgba(35,89,156,1) 100%);
+  border-image-slice: 1;
+  background-color: rgba(22, 21, 29, 0.5);
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/conor.png");
+    background-repeat: no-repeat;
+    left: -4px;
+    bottom: -16px;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/conor.png");
+    background-repeat: no-repeat;
+    right: -4px;
+    top: -16px;
+  }
 }
