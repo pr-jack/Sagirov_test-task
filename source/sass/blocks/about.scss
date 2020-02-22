@@ -1,15 +1,106 @@
 .intro-about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 380px;
+  justify-content: end;
+  width: 390px;
+  margin-top: 36px;
 }
 
 .about__marketplace,
 .about__guarantee,
 .about__calendar,
 .about__travel {
-  display: block;
+  display: flex;
   width: 185px;
   height: 185px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: lowercase;
+  color: $color-base;
+
+}
+
+.about__marketplace {
+  background: linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(-45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(-45deg, rgba(153,153,153,1) 0%, transparent 50%);
+    border-image-slice: 1;
+  }
+}
+
+.about__guarantee {
+  background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(45deg, rgba(153,153,153,1) 0%, transparent 50%);
+    border-image-slice: 1;
+  }
+}
+
+.about__calendar {
+  background: linear-gradient(-135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(-135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+  }
+}
+
+.about__travel {
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+  }
+}
+
+.text {
+  font-family: $font-small;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.digit {
+  font-family: $font-secondary;
+  font-size: 60px;
+}
+
+.about__guarantee {
+
+  &--digit span {
+    font-size: 20px;
+  }
+}
+
+.wrapper__about {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  &--marketplace {
+    width: 73px;
+    height: 97px;
+  }
+
+  &--guarantee {
+    width: 114px;
+    height: 91px;
+  }
+
+  &--calendar {
+    width: 142px;
+    height: 98px;
+  }
+
+  &--travel {
+    width: 105px;
+    height: 100px;
+  }
 }

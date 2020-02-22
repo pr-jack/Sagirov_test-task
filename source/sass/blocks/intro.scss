@@ -5,11 +5,12 @@
   &::after {
     position: absolute;
     content: "";
-    width: 406px;
+    width: 443px;
     height: 58px;
     background-image: url("../img/line.png");
     background-repeat: no-repeat;
-    bottom: 0;
+    left: 146px;
+    bottom: 70px;
   }
 }
 
