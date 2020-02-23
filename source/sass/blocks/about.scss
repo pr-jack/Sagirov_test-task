@@ -1,8 +1,186 @@
+.intro-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 0 auto;
+  width: 290px;
+  margin-top: 24px;
+}
+
+.about__marketplace,
+.about__guarantee,
+.about__calendar,
+.about__travel {
+  position: relative;
+  display: flex;
+  width: 130px;
+  height: 130px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: lowercase;
+  color: $color-base;
+
+}
+
+.about__marketplace {
+  background: linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(-45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 130px;
+      background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
+      right: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 1px;
+      background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.about__guarantee {
+  background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 130px;
+      background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 1px;
+      background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.about__calendar {
+  background: linear-gradient(-135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(-135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 130px;
+      background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
+      right: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 1px;
+      background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.about__travel {
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 130px;
+      background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 1px;
+      background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.text {
+  font-family: $font-small;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.digit {
+  font-family: $font-secondary;
+  font-size: 36px;
+}
+
+.about__guarantee {
+
+  &--digit span {
+    font-size: 20px;
+  }
+}
+
+.wrapper__about {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  &--marketplace {
+    width: 73px;
+    height: 97px;
+  }
+
+  &--guarantee {
+    width: 114px;
+    height: 91px;
+  }
+
+  &--calendar {
+    width: 142px;
+    height: 98px;
+  }
+
+  &--travel {
+    width: 105px;
+    height: 100px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro-about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
     width: 320px;
     margin-top: 36px;
   }
@@ -11,138 +189,72 @@
   .about__guarantee,
   .about__calendar,
   .about__travel {
-    position: relative;
-    display: flex;
     width: 150px;
     height: 150px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    text-transform: lowercase;
-    color: $color-base;
-
   }
 
   .about__marketplace {
-    background: linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
     &:hover {
-      background: linear-gradient(-45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
 
       &::before {
-        position: absolute;
-        content: "";
-        width: 1px;
         height: 150px;
-        background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
-        right: 0;
-        bottom: 0;
       }
 
       &::after {
-        position: absolute;
-        content: "";
         width: 150px;
-        height: 1px;
-        background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
-        left: 0;
-        bottom: 0;
       }
     }
   }
 
   .about__guarantee {
-    background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
     &:hover {
-      background: linear-gradient(45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
 
       &::before {
-        position: absolute;
-        content: "";
-        width: 1px;
         height: 150px;
-        background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
-        left: 0;
-        bottom: 0;
       }
 
       &::after {
-        position: absolute;
-        content: "";
         width: 150px;
-        height: 1px;
-        background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
-        left: 0;
-        bottom: 0;
       }
     }
   }
 
   .about__calendar {
-    background: linear-gradient(-135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
     &:hover {
-      background: linear-gradient(-135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
 
       &::before {
-        position: absolute;
-        content: "";
-        width: 1px;
         height: 150px;
-        background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
-        right: 0;
-        bottom: 0;
       }
 
       &::after {
-        position: absolute;
-        content: "";
         width: 150px;
-        height: 1px;
-        background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
-        left: 0;
-        top: 0;
       }
     }
   }
 
   .about__travel {
-    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
     &:hover {
-      background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
 
       &::before {
-        position: absolute;
-        content: "";
-        width: 1px;
         height: 150px;
-        background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
-        left: 0;
-        bottom: 0;
       }
 
       &::after {
-        position: absolute;
-        content: "";
         width: 150px;
-        height: 1px;
-        background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
-        left: 0;
-        top: 0;
       }
     }
   }
 
   .text {
-    font-family: $font-small;
     font-size: 14px;
     line-height: 14px;
   }
 
   .digit {
-    font-family: $font-secondary;
     font-size: 48px;
   }
 
@@ -150,32 +262,6 @@
 
     &--digit span {
       font-size: 20px;
-    }
-  }
-
-  .wrapper__about {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-
-    &--marketplace {
-      width: 73px;
-      height: 97px;
-    }
-
-    &--guarantee {
-      width: 114px;
-      height: 91px;
-    }
-
-    &--calendar {
-      width: 142px;
-      height: 98px;
-    }
-
-    &--travel {
-      width: 105px;
-      height: 100px;
     }
   }
 }
@@ -258,5 +344,3 @@
     font-size: 60px;
   }
 }
-
-
