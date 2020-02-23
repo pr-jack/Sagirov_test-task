@@ -1,6 +1,6 @@
 .intro-title {
   position: relative;
-  margin-top: 110px;
+  margin-top: 116px;
 
   &::after {
     position: absolute;
@@ -22,6 +22,13 @@
   background: linear-gradient(270deg, rgba(255,63,4,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.intro-title__text {
+  width: 430px;
+  height: 76px;
+  background-image: url("../img/title.png");
+  background-repeat: no-repeat;
 }
 
 .intro-title__description {
