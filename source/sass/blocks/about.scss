@@ -1,179 +1,262 @@
-.intro-about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-  width: 390px;
-  margin-top: 36px;
-}
-
-.about__marketplace,
-.about__guarantee,
-.about__calendar,
-.about__travel {
-  position: relative;
-  display: flex;
-  width: 185px;
-  height: 185px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: lowercase;
-  color: $color-base;
-
-}
-
-.about__marketplace {
-  background: linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
-
-  &:hover {
-    background: linear-gradient(-45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 185px;
-      background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
-      right: 0;
-      bottom: 0;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 185px;
-      height: 1px;
-      background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
-      left: 0;
-      bottom: 0;
-    }
+@media (min-width: $tablet-width) {
+  .intro-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 320px;
+    margin-top: 36px;
   }
-}
 
-.about__guarantee {
-  background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+  .about__marketplace,
+  .about__guarantee,
+  .about__calendar,
+  .about__travel {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    color: $color-base;
 
-  &:hover {
-    background: linear-gradient(45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 185px;
-      background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
-      left: 0;
-      bottom: 0;
-    }
+  .about__marketplace {
+    background: linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 185px;
-      height: 1px;
-      background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
-      left: 0;
-      bottom: 0;
+    &:hover {
+      background: linear-gradient(-45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 150px;
+        background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
+        right: 0;
+        bottom: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 1px;
+        background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
+        left: 0;
+        bottom: 0;
+      }
     }
   }
-}
 
-.about__calendar {
-  background: linear-gradient(-135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+  .about__guarantee {
+    background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
-  &:hover {
-    background: linear-gradient(-135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+    &:hover {
+      background: linear-gradient(45deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 185px;
-      background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
-      right: 0;
-      bottom: 0;
-    }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 150px;
+        background: linear-gradient(to top, rgba(219,219,219,1) 0%, transparent 100%);
+        left: 0;
+        bottom: 0;
+      }
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 185px;
-      height: 1px;
-      background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
-      left: 0;
-      top: 0;
-    }
-  }
-}
-
-.about__travel {
-  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
-
-  &:hover {
-    background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 185px;
-      background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
-      left: 0;
-      bottom: 0;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 185px;
-      height: 1px;
-      background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
-      left: 0;
-      top: 0;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 1px;
+        background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
+        left: 0;
+        bottom: 0;
+      }
     }
   }
-}
 
-.text {
-  font-family: $font-small;
-  font-size: 16px;
-  line-height: 16px;
-}
+  .about__calendar {
+    background: linear-gradient(-135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
 
-.digit {
-  font-family: $font-secondary;
-  font-size: 60px;
-}
+    &:hover {
+      background: linear-gradient(-135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
 
-.about__guarantee {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 150px;
+        background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
+        right: 0;
+        bottom: 0;
+      }
 
-  &--digit span {
-    font-size: 20px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 1px;
+        background: linear-gradient(to left, rgba(219,219,219,1) 0%, transparent 100%);
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .about__travel {
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+
+    &:hover {
+      background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 50%);
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 150px;
+        background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, transparent 100%);
+        left: 0;
+        bottom: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 1px;
+        background: linear-gradient(to right, rgba(219,219,219,1) 0%, transparent 100%);
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .text {
+    font-family: $font-small;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .digit {
+    font-family: $font-secondary;
+    font-size: 48px;
+  }
+
+  .about__guarantee {
+
+    &--digit span {
+      font-size: 20px;
+    }
+  }
+
+  .wrapper__about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    &--marketplace {
+      width: 73px;
+      height: 97px;
+    }
+
+    &--guarantee {
+      width: 114px;
+      height: 91px;
+    }
+
+    &--calendar {
+      width: 142px;
+      height: 98px;
+    }
+
+    &--travel {
+      width: 105px;
+      height: 100px;
+    }
   }
 }
 
-.wrapper__about {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-
-  &--marketplace {
-    width: 73px;
-    height: 97px;
+@media (min-width: $desctop-width) {
+  .intro-about {
+    width: 390px;
   }
 
-  &--guarantee {
-    width: 114px;
-    height: 91px;
+  .about__marketplace,
+  .about__guarantee,
+  .about__calendar,
+  .about__travel {
+    width: 185px;
+    height: 185px;
   }
 
-  &--calendar {
-    width: 142px;
-    height: 98px;
+  .about__marketplace {
+
+    &:hover {
+
+      &::before {
+        height: 185px;
+      }
+
+      &::after {
+        width: 185px;
+      }
+    }
   }
 
-  &--travel {
-    width: 105px;
-    height: 100px;
+  .about__guarantee {
+
+    &:hover {
+
+      &::before {
+        height: 185px;
+      }
+
+      &::after {
+        width: 185px;
+      }
+    }
+  }
+
+  .about__calendar {
+
+    &:hover {
+
+      &::before {
+        height: 185px;
+      }
+
+      &::after {
+        width: 185px;
+      }
+    }
+  }
+
+  .about__travel {
+
+    &:hover {
+
+      &::before {
+        height: 185px;
+      }
+
+      &::after {
+        width: 185px;
+      }
+    }
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .digit {
+    font-size: 60px;
   }
 }
+
+
